@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        double km;
+        double perKm=2.20;
+        double total;
+        int initialPrice=10;
+
+        Scanner input=new Scanner(System.in);
+
+        System.out.println("Mesafeyi giriniz:");
+        km=input.nextDouble();
+        total=km*perKm;
+        total+=initialPrice;
+        if(total<20){
+            total=20;
+            System.out.println("total cost:"+total);
+        }else{
+            System.out.println("total cost:"+total);
+
+        }
+
+
+
+    }
+}
